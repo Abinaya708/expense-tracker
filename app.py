@@ -133,7 +133,7 @@ if not st.session_state.logged_in:
                 st.session_state.logged_in = True
                 st.session_state.user_id = user[0]
                 st.success("Login successful!")
-                st.experimental_run()
+                st.experimental_rerun()
             else:
                 st.error("Invalid credentials.")
 
